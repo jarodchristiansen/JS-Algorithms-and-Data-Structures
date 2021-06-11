@@ -9,12 +9,11 @@
 //   fib(4) === 3
 
 function fib(n) {
-    let start = [0, 1]
-
-    for (let i=1; i< n; i++) {
-        start.push(start[i-1] + start[i])
+    let start = [0,1]
+    for(let i = 1; i<n; i++) {
+        start.push(start[i -1] + start[i])
     }
-    return start[n];
+    return start[n]
 }
 
 module.exports = fib;
