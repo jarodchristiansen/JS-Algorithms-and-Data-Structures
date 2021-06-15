@@ -10,11 +10,11 @@
 
 function chunk(array, size) {
   let results = [];
-  let arrayCopy = [...array]
-  while(arrayCopy.length > 0) {
-      results.push(arrayCopy.splice(0, size))
+  let arrayCopy = [...array];
+  while (arrayCopy.length > 0) {
+    results.push(arrayCopy.splice(0, size))
   }
-  return results
+  return results;
 }
 
 module.exports = chunk;
